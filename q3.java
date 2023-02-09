@@ -15,7 +15,9 @@ public static void main(String[] args) {
             if (items[num-1].equals("peas")) {
                 isPeas = true;
             };
-            System.out.print(items[amount - num-1] + ", ");
+        }
+        for (int num = amount; num > 0; num = num -1) {
+            System.out.print(items[num-1] + ", ");
         }
         total = total / amount;
         if (isPeas == true) {
